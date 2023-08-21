@@ -10,7 +10,7 @@ int RecursiveFibonacci(int n)
     	return n;
     }
 	else {
-    	return Fibonacci(n - 1) + Fibonacci(n - 2);
+    	return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
     };
 };
 
