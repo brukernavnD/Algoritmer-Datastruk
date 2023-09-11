@@ -21,10 +21,13 @@ int Factorial(int FactorialNum)
 
 int RecursiveFactorial(int FactorialNum)
 {
-	if(FactorialNum > 1)
-		return FactorialNum * RecursiveFactorial(FactorialNum - 1);
-	else
-		return 1;
+	if(FactorialNum > 1){
+        return FactorialNum * RecursiveFactorial(FactorialNum - 1);
+    }
+	else if (FactorialNum < 0){
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    };
+    return 1;
 };
 
 int main()
